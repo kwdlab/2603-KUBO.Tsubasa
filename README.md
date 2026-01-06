@@ -34,6 +34,7 @@ Install the Bouncy Castle library via NuGet:
 
 ```bash
 dotnet add package BouncyCastle.Cryptography
+```
 
 ---
 

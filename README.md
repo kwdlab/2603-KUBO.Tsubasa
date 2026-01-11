@@ -51,8 +51,6 @@ Keccak-based hash functions in a C# implementation.
    dotnet add package BouncyCastle.Cryptography
    ```
 
----
-
 ### Usage
 
 Each ML-KEM phase (**Key Generation, Encapsulation, Decapsulation**) is implemented as a

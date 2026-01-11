@@ -25,16 +25,45 @@ Keccak-based hash functions in a C# implementation.
 ---
 
 ## Requirements
-- BouncyCastle.Cryptography 2.6.2
+- IDE: Visual Studio 2026
+- .NET: .NET 10.0
+- C#: C# 14.0
+
+### Libraries
+- **BouncyCastle.Cryptography 2.6.2**
+  - Distributed via NuGet as a precompiled library
+  - https://www.nuget.org/packages/BouncyCastle.Cryptography
 
 ---
 
 ## Install / Usage
-Install the Bouncy Castle library via NuGet:
 
-```bash
-dotnet add package BouncyCastle.Cryptography
-```
+### Installation
+1. Clone Bouncy Castle repository:
+
+   ```bash
+   git clone https://github.com/bcgit/bc-csharp.git
+   ```
+2. Open the solution in Visual Studio.
+3. Install the Bouncy Castle library via NuGet:
+
+   ```bash
+   dotnet add package BouncyCastle.Cryptography
+   ```
+
+---
+
+### Usage
+
+Each ML-KEM phase (**Key Generation, Encapsulation, Decapsulation**) is implemented as a
+minimal standalone program designed specifically for profiling.
+
+To reproduce the measurements:
+
+1. Select the target program as the startup project.
+2.Launch **Visual Studio Performance Profiler**.
+3.Enable CPU Usage and focus on Self CPU Time.
+4.Run the program and analyze the function-level time distribution.
 
 ---
 

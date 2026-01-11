@@ -59,9 +59,9 @@ minimal standalone program designed specifically for profiling.
 To reproduce the measurements:
 
 1. Select the target program as the startup project.
-2.Launch **Visual Studio Performance Profiler**.
-3.Enable CPU Usage and focus on Self CPU Time.
-4.Run the program and analyze the function-level time distribution.
+2. Launch **Visual Studio Performance Profiler**.
+3. Enable CPU Usage and focus on Self CPU Time.
+4. Run the program and analyze the function-level time distribution.
 
 ---
 
